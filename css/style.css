@@ -36,12 +36,15 @@ ul li, #newColor {
 	box-shadow: 0 3px 0 0 #222;
 }
 
-.closeColor {
-	width: 10px;
-	height: 10px;
-	bakcground-color: #000;
+.closeButton {
+	height: 15px;
+	background-color: #000;
+	color: #FFF;
 	border: 1px solid #FFF;
-	border-radius: 50px;
+	border-radius: 10px;
+	font-size: 12px;
+	padding: 2px 5px;
+	margin: 0 0 0 40px;	
 }
 
 ul li {
@@ -62,9 +65,7 @@ ul li {
 }
 
 .selected {
-	border: 7px solid #fff;
-	width: 40px;
-	height: 40px;
+	border: 2px solid #fff;
 }
 button {
 	background: #68B25B;
