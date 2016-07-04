@@ -36,6 +36,14 @@ ul li, #newColor {
 	box-shadow: 0 3px 0 0 #222;
 }
 
+.closeColor {
+	width: 10px;
+	height: 10px;
+	bakcground-color: #000;
+	border: 1px solid #FFF;
+	border-radius: 50px;
+}
+
 ul li {
 	display: inline-block;
 	margin: 0 5px 10px;

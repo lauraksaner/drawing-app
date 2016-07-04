@@ -37,7 +37,7 @@ $("input[type=range]").change(changeColor);
 //When "Add Color" is pressed
 $("#addNewColor").click(function(){
   //Append the color to the controls ul
-  var $newColor = $("<li></li>");
+  var $newColor = $("<li></li><span class='closeColor'>X</span>");
   $newColor.css("background-color", $("#newColor").css("background-color"));
   $(".controls ul").append($newColor);
   //Select the new color
