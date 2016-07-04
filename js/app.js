@@ -1,5 +1,5 @@
 //Team Treehouse Drawing App Project
-//Additional fixes after course: Fixed for display in Firefox and IE
+//Additional fixes after course: Fixed for display in Firefox and IE, added ability to remote colors.
 var color = $(".selected").css("background-color");
 var $canvas = $("canvas");
 var context = $canvas[0].getContext("2d");
@@ -23,6 +23,12 @@ $("#revealColorSelect").click(function(){
   $("#colorSelect").toggle();
 });
 
+//When close button is pressed
+$("ul").on("click", ".closeButton", function(){
+	//Remove the color from the page.
+	$(this).parent().remove();
+});
+
 //Update the new color span
 function changeColor() {
   var r = $("#red").val();
@@ -37,7 +43,7 @@ $("input[type=range]").change(changeColor);
 //When "Add Color" is pressed
 $("#addNewColor").click(function(){
   //Append the color to the controls ul
-  var $newColor = $("<li></li>");
+  var $newColor = $("<li><span class='closeButton'>X</span></li>");
   $newColor.css("background-color", $("#newColor").css("background-color"));
   $(".controls ul").append($newColor);
   //Select the new color
